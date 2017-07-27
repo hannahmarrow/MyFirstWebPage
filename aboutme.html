@@ -209,19 +209,24 @@ and I loved listening to them talk.
 </h1>
 <button onclick="displayDate()">Click to read my reflection!</button>
 
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
 <script>
-function displayDate() {
-    document.getElementById("demo").innerHTML = "It was really fun learning how to use JavaScript because it is a way to make my website more interactive and fun to use. I liked that the
+function mOver(obj) {
+    obj.innerHTML = "It was really fun learning how to use JavaScript because it is a way to make my website more interactive and fun to use. I liked that the
 JavaScript syntax is very similar to that of HTML since I had a good time using HTML to make my website in the first place. Despite the
 syntax, it was a little difficult to pick up at first because each command is very wordy so it is easy to get lost in the lines of
 code. However, I am very happy with how my first attempt at JavaScript came out. I inserted a button next to the picture of a puppy and
 when the user presses it, the picture turns into the Obamicon version. I also made it so that every picture on my page gets bigger when
-the user hovers their mouse over it.";
+the user hovers their mouse over it."
+}
+
+function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me to See My Reflection"
 }
 </script>
-
-<p id="demo"></p>
-
 
 <h1>
 	Django Reflection
